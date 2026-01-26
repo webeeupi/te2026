@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models\ST;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Hours extends Model
+{
+    //
+    protected $fillable = [];
+    protected $guarded = [];
+    protected $table = 'fetnet_hours';
+}
