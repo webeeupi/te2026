@@ -47,20 +47,10 @@
                 @endif
 
                 <x-menu-item title="Home" icon="o-sparkles" link="/" />
-
                 @role('admin')
-                <x-menu-separator />
-                <x-menu-item title="Program" icon="o-archive-box" link="/admin/program" />
-                @endrole
+                    <x-menu-item title="Client" icon="o-sparkles" link="/admin/client" />
 
-                @role('program')
-                <x-menu-separator />
-                <x-menu-item title="Teacher" icon="o-sparkles" link="/program/teacher" />
-                <x-menu-item title="Subject" icon="o-sparkles" link="/program/subject" />
-                <x-menu-item title="Schedule" icon="o-sparkles" link="/program/schedule" />
-                <x-menu-item title="Assignment" icon="o-sparkles" link="/program/assignment" />
                 @endrole
-
 
             </x-menu>
         </x-slot:sidebar>

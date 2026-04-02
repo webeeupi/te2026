@@ -25,7 +25,13 @@ new #[Layout('layouts::guest')] class extends Component
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
             //dd($this->email, $this->password);
             // Authentication passed...
-            return redirect()->route('admin');
+            if(Auth::user()->hasRole('admin')){
+                return redirect()->route('admin');
+            }else{
+                return redirect()->route('login');
+            }
+
+
         }else{
             $this->error('Email atau password salah', position: 'toast-top toast-center');
         }

@@ -16,14 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
 
         Role::create(['name' => 'admin']);
-        Role::create(['name' => 'program']);
 
         $user = User::factory()->create([
             'name' => 'Admin',
-            'email' => 'st@techupi.id',
+            'email' => 'admin@bems.id',
             'password' => Hash::make('Ddw9889##'),
         ]);
 
