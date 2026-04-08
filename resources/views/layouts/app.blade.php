@@ -49,6 +49,8 @@
                 <x-menu-item title="Home" icon="o-sparkles" link="/" />
                 @role('admin')
                     <x-menu-item title="Client" icon="o-sparkles" link="/admin/client" />
+                    <x-menu-item title="Building" icon="o-building-office" link="/admin/building" />
+                    <x-menu-item title="Classroom" icon="o-academic-cap" link="/admin/classroom" />
 
                 @endrole
 
